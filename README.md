@@ -1,7 +1,7 @@
 # Hi, this is **_意大利词_**. :asdf
 
+<img alt="Yiyang Sun" src="./assets/avatar.jpg" width=100 />
 <div align=center>
-<img alt="Yiyang Sun" src="./assets/avatar.jpg" width=300 />
 
 </div>
 
