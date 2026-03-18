@@ -1,0 +1,53 @@
+{
+  "name": "uav-at",
+  "version": "0.1.0",
+  "description": "无人机航拍空中三角测量处理系统",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "uav-at": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "lint": "eslint src/ --ext .ts",
+    "lint:fix": "eslint src/ --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "audit": "pnpm audit --audit-level=high"
+  },
+  "dependencies": {
+    "@opencvjs/node": "^4.13.0-release.1",
+    "commander": "^12.0.0",
+    "exifreader": "^4.0.0",
+    "ml-matrix": "^6.0.0",
+    "pino": "^9.0.0",
+    "proj4": "^2.0.0",
+    "sharp": "^0.33.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/proj4": "^2.0.0",
+    "@types/node": "^22.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "exifreader",
+      "sharp"
+    ]
+  }
+}

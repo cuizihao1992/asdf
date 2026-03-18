@@ -1,0 +1,30 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# WASM build artifacts
+wasm/build/
+
+# Checkpoints
+.checkpoints/
+
+# IDE
+.vscode/
+!.vscode/settings.json
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+pino-*.log
+
+# Environment
+.env
+.env.local
+
+# Test output
+output/
